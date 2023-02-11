@@ -1,0 +1,16 @@
+name: Update Authors
+on:
+  push:
+    branches:
+      - develop
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: wow-actions/update-authors@v1
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          sort: commits
+          bots: false
+          template: '{{name}} <{{email}}> with {{commits}} commits'
