@@ -1,8 +1,7 @@
 name: Update Authors
 on:
   push:
-    branches:
-      - develop
+    branches: [develop]
 jobs:
   run:
     runs-on: ubuntu-latest
