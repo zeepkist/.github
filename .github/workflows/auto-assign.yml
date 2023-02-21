@@ -1,9 +1,9 @@
 name: Auto Assign
 on:
   issues:
-    types: [opened,edited]
+    types: [opened, edited]
   pull_request:
-    types: [opened,edited,synchronize]
+    types: [opened, edited, synchronize]
 jobs:
   run:
     runs-on: ubuntu-latest
