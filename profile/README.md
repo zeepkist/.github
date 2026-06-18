@@ -8,9 +8,9 @@ The Zeepkist Community Hub consists of multiple interconnected projects working 
 
 | Project                      | Role                                                                                                                      | Technologies                         | Link                                                              |
 | ---------------------------- | ------------------------------------------------------------------------------------------------------------------------- | ------------------------------------ | ----------------------------------------------------------------- |
-| **Backend**                  | Central backend service managing runs, ghosts, times, and leaderboards. Powers both the frontend website and the GTR mod. | Bun (TypeScript), PostgreSQL, Docker | [Backend](https://github.com/zeepkist/backend)                    |
+| **ZeepCentral Web**              | Community-facing website showcasing leaderboards, records, tournaments, and user data.                                    | Nuxt 4, Vue 3                        | [ZeepCentral](https://github.com/zeepkist/zeepcentraal-web)               |
+| **ZeepCentraal**                  | Central backend service managing runs, ghosts, times, and leaderboards. Powers both the frontend website and the GTR mod. | Bun (TypeScript), PostgreSQL, Docker | [Backend](https://github.com/zeepkist/zeepcentraal)                    |
 | **PostGraphile GraphQL API** | Public GraphQL API exposing flexible access to the backend data.                                                          | Node.js, PostGraphile, OpenTelemetry | [PostGraphile GitHub](https://github.com/zeepkist/postgraphile)   |
-| **ZeepCentral**              | Community-facing website showcasing leaderboards, records, tournaments, and user data.                                    | Nuxt 4, Vue 3                        | [ZeepCentral](https://github.com/zeepkist/zeepkist)               |
 | **GTR Mod**                  | Game mod that supplies gameplay data to the backend and enhances in-game functionality.                                    | C# (Unity mod)                       | [GTR Mod on mod.io](https://mod.io/g/zeepkist/m/zeepkist-gtr)     |
 
 ## Open Core Philosophy
@@ -24,7 +24,7 @@ The Zeepkist Community Hub embraces an **Open Core** model that:
 
 ## Project Details
 
-### Backend
+### ZeepCentraal
 
 The Backend is the heart of the Hub, providing:
 
@@ -43,7 +43,7 @@ The Backend is the heart of the Hub, providing:
   
 *Requires PostgreSQL.*
 
-### ZeepCentral Frontend
+### ZeepCentraal Web
 
 * User-friendly website displaying world records, personal bests, tournament results and community data.
 * Built with modern web technologies (Nuxt 4, Vue 3) for performance and scalability.
