@@ -8,10 +8,10 @@ The Zeepkist Community Hub consists of multiple interconnected projects working 
 
 | Project                      | Role                                                                                                                      | Technologies                         | Link                                                              |
 | ---------------------------- | ------------------------------------------------------------------------------------------------------------------------- | ------------------------------------ | ----------------------------------------------------------------- |
-| **ZeepCentral Web**              | Community-facing website showcasing leaderboards, records, tournaments, and user data.                                    | Nuxt 4, Vue 3                        | [ZeepCentral](https://github.com/zeepkist/zeepcentraal-web)               |
-| **ZeepCentraal**                  | Central backend service managing runs, ghosts, times, and leaderboards. Powers both the frontend website and the GTR mod. | Bun (TypeScript), PostgreSQL, Docker | [Backend](https://github.com/zeepkist/zeepcentraal)                    |
-| **PostGraphile GraphQL API** | Public GraphQL API exposing flexible access to the backend data.                                                          | Node.js, PostGraphile, OpenTelemetry | [PostGraphile GitHub](https://github.com/zeepkist/postgraphile)   |
-| **GTR Mod**                  | Game mod that supplies gameplay data to the backend and enhances in-game functionality.                                    | C# (Unity mod)                       | [GTR Mod on mod.io](https://mod.io/g/zeepkist/m/zeepkist-gtr)     |
+| **ZeepCentraal**                  | Central monorepo for ZeepCentraal, managing runs, ghosts, times and leaderboards. Powers both the frontend website and the GTR mod. | Bun (TypeScript), ElysiaJS, PostgreSQL | [GitHub Monorepo](https://github.com/zeepkist/zeepcentraal)                    |
+| **ZeepCentral Web**              | Community-facing website for ZeepCentraal                                    | Nuxt 4, Vue 3                        | [ZeepCentral](https://zeepki.st)               |
+| **PostGraphile GraphQL API** | Public GraphQL API exposing flexible access to ZeepCentraal data.                                                          | Bun (TypeScript), PostGraphile | [GraphQL Playground](https://graphql.zeepki.st)   |
+| **GTR Mod**                  | Zeepkist mod that supplies gameplay data to ZeepCentraal and enhances in-game functionality.                                    | C# (Unity mod)                       | [GTR Mod](https://zeepki.st/mod/zeepkist-gtr)     |
 
 ## Open Core Philosophy
 
@@ -21,43 +21,6 @@ The Zeepkist Community Hub embraces an **Open Core** model that:
 * Encourages collaboration and extensibility across the community website (ZeepCentral), backend, and API projects.
 * Keeps deployment orchestration—such as the Docker Compose setup—closed source, delivering a streamlined, official managed hosting solution.
 * Balances openness and developer flexibility with efficient, reliable official deployment and maintenance.
-
-## Project Details
-
-### ZeepCentraal
-
-The Backend is the heart of the Hub, providing:
-
-* Secure REST APIs for mod and frontend communication.
-* Persistent storage and fast retrieval of runs, ghosts, and records.
-* Database migrations and schema management via Drizzle ORM.
-* Scheduled jobs for leaderboards, history, and data upkeep.
-* Integration with external services like Steam, Discord and Wasabi S3.
-
-*Requires Bun runtime and PostgreSQL.*
-
-### PostGraphile GraphQL API
-
-* Exposes a powerful and customizable GraphQL endpoint backed by PostgreSQL.
-* Supports complex queries and subscriptions with OpenTelemetry tracing.
-  
-*Requires PostgreSQL.*
-
-### ZeepCentraal Web
-
-* User-friendly website displaying world records, personal bests, tournament results and community data.
-* Built with modern web technologies (Nuxt 4, Vue 3) for performance and scalability.
-* Integrates seamlessly with the backend APIs.
-  
-*Requires Bun runtime.*
-
-### GTR Mod
-
-* Enhances the Zeepkist gameplay experience.
-* Collects and submits gameplay data (times, ghosts) directly to the backend.
-* Enables advanced in-game overlays and functionality tied to community data.
-  
-*Requires .Net runtime.*
 
 ## Contributing
 
