@@ -1,41 +1,62 @@
+<div align="center">
+
 # Zeepkist Community Hub
 
-Welcome to the **Zeepkist Community Hub**, an open core ecosystem powering the Zeepkist community’s online tools and services.
+Community-built tools, mods and competitive events for **[Zeepkist](https://store.steampowered.com/app/1440670/Zeepkist/)**.
 
-## Overview
+[![ZeepCentraal](https://flat.badgen.net/static/ZeepCentraal/Explore/blue)](https://zeepki.st)
+[![World Records](https://flat.badgen.net/static/Records/Live/orange)](https://zeepki.st/records)
+[![Super League](https://flat.badgen.net/static/Super%20League/Compete/purple)](https://zeepki.st/super-league)
+[![GTR](https://flat.badgen.net/static/GTR/Get%20Started/green)](https://zeepki.st/wiki/setup-modkist)
 
-The Zeepkist Community Hub consists of multiple interconnected projects working together to deliver a seamless competitive and social platform for Zeepkist players:
+</div>
 
-| Project                      | Role                                                                                                                      | Technologies                         | Link                                                              |
-| ---------------------------- | ------------------------------------------------------------------------------------------------------------------------- | ------------------------------------ | ----------------------------------------------------------------- |
-| **ZeepCentraal**                  | Central monorepo for ZeepCentraal, managing runs, ghosts, times and leaderboards. Powers both the frontend website and the GTR mod. | Bun (TypeScript), ElysiaJS, PostgreSQL | [GitHub Monorepo](https://github.com/zeepkist/zeepcentraal)                    |
-| **ZeepCentral Web**              | Community-facing website for ZeepCentraal                                    | Nuxt 4, Vue 3                        | [ZeepCentral](https://zeepki.st)               |
-| **PostGraphile GraphQL API** | Public GraphQL API exposing flexible access to ZeepCentraal data.                                                          | Bun (TypeScript), PostGraphile | [GraphQL Playground](https://graphql.zeepki.st)   |
-| **GTR Mod**                  | Zeepkist mod that supplies gameplay data to ZeepCentraal and enhances in-game functionality.                                    | C# (Unity mod)                       | [GTR Mod](https://zeepki.st/mod/zeepkist-gtr)     |
+---
 
-## Open Core Philosophy
+We build and maintain services that make it easier to race, discover levels and compete with the Zeepkist community. **[ZeepCentraal](https://zeepki.st)** brings online records, leaderboards, player profiles, ghost replays and community competitions together. Our other projects extend the game, power events and connect players.
 
-The Zeepkist Community Hub embraces an **Open Core** model that:
+## Explore ZeepCentraal
 
-* Provides fully open source core backend services, APIs, and community tools to ensure transparency and foster community contributions.
-* Encourages collaboration and extensibility across the community website (ZeepCentral), backend, and API projects.
-* Keeps deployment orchestration—such as the Docker Compose setup—closed source, delivering a streamlined, official managed hosting solution.
-* Balances openness and developer flexibility with efficient, reliable official deployment and maintenance.
+| | |
+| --- | --- |
+| **[World records & live activity](https://zeepki.st/records)** | Follow new personal bests and world records as they happen. |
+| **[Player rankings](https://zeepki.st/users)** | Compare players, rankings, records and medals. |
+| **[Levels](https://zeepki.st/levels)** | Explore community tracks and their leaderboards. |
+| **[Super League](https://zeepki.st/super-league)** | Take part in competitive events and follow season standings. |
+| **[Adventure leaderboards](https://zeepki.st/adventure)** | Compare progress and combined times across Adventure Mode. |
+| **[Track of the Day](https://zeepki.st/totw) / [Week](https://zeepki.st/totw) / [Month](https://zeepki.st/totm)** | Follow standings across time attack challenges. |
 
-## Contributing
+## Our projects
 
-Community contributions are warmly welcomed! Please see individual project repositories for contribution guidelines.
+| Project | What it does | Source |
+| --- | --- | --- |
+| **ZeepCentraal** | Community platform, records, ghost replays, rankings, tournaments, web app and backend services. | [zeepkist/zeepcentraal](https://github.com/zeepkist/zeepcentraal) |
+| **GTR** | In-game mod for submitting validated runs and using ZeepCentraal features in Zeepkist. | [zeepkist/gtr](https://github.com/zeepkist/gtr) |
+| **ZeepSDK** | C# SDK for Zeepkist mod development. | [zeepkist/ZeepSDK](https://github.com/zeepkist/ZeepSDK) |
+| **Super League** | Event data and results for Zeepkist Super League. | [zeepkist/super-league](https://github.com/zeepkist/super-league) |
+| **StreamKist** | Twitch livestream notifications for game communities on Discord. | [zeepkist/streamkist](https://github.com/zeepkist/streamkist) |
+| **Optikist** | In-game mod providing performance and reflection tweaks in Zeepkist. | [zeepkist/optikist](https://github.com/zeepkist/optikist) |
 
-* Report bugs or request features via issues.
-* Submit pull requests with improvements or fixes.
+> [!NOTE]
+> This organisation also contains archived repositories from earlier versions of ZeepCentraal. For current development, start with **[zeepkist/zeepcentraal](https://github.com/zeepkist/zeepcentraal)** rather than the archived standalone web, API and backend projects.
 
-## License
+## For developers
 
-All open core projects are licensed under the [MIT License](LICENSE).
+ZeepCentraal is developed as a Rust and TypeScript monorepo. The platform uses **Bun, Nuxt, Vue, PostgreSQL and GraphQL**, alongside the C# tooling used by Zeepkist mods.
+
+- **[Browse source](https://github.com/zeepkist/zeepcentraal):** main application, services and development instructions.
+- **[GraphQL API](https://graphql.zeepki.st):** explore public ZeepCentraal data.
+- **[GTR source](https://github.com/zeepkist/gtr):** game integration and record submissions.
+- **[ZeepSDK source](https://github.com/zeepkist/ZeepSDK):** build Zeepkist mods.
+
+### Contributing
+
+Found a bug or want to improve something? Open an issue or pull request in the relevant repository. Check its README and licence before starting work. Contributions should include relevant tests and a clear description of changes.
+
+**Licensing varies by repository and component.** ZeepCentraal's root licence is MIT, but specified level geometry, geometry extraction and lobby-host components have separate restrictions. Consult each project's licence for exact permissions; do not assume the same licence applies to every repository or component.
 
 ## Links
 
-* [Zeepkist Community Hub on GitHub](https://github.com/ZeepkistCommunityHub)
-* [ZeepCentral website](https://zeepki.st)
-* [GTR Mod on mod.io](https://mod.io/g/zeepkist/m/zeepkist-gtr)
-* [Official Zeepkist Game](https://store.steampowered.com/app/1440670/Zeepkist/)
+[**ZeepCentraal**](https://zeepki.st) · [**GTR setup**](https://zeepki.st/wiki/setup-modkist) · [**Zeepkist on Steam**](https://store.steampowered.com/app/1440670/Zeepkist/) · [**GitHub repositories**](https://github.com/orgs/zeepkist/repositories)
+
+<sub>Zeepkist is developed by Steelpan Interactive. This community organisation is not the game's official developer.</sub>
