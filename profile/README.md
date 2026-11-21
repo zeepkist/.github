@@ -13,7 +13,9 @@ Community-built tools, mods and competitive events for **[Zeepkist](https://stor
 
 ---
 
-We build and maintain services that make it easier to race, discover levels and compete with the Zeepkist community. **[ZeepCentraal](https://zeepki.st)** brings online records, leaderboards, player profiles, ghost replays and community competitions together. Our other projects extend the game, power events and connect players.
+We build and maintain services that make it easier to race, discover levels and compete with the Zeepkist community. 
+
+**[ZeepCentraal](https://zeepki.st)** brings online records, leaderboards, player profiles, ghost replays and community competitions together. Our other projects extend the game, power events and connect players.
 
 ## Explore ZeepCentraal
 
